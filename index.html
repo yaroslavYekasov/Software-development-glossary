@@ -19,15 +19,20 @@
     <tbody>
     <tr>
         <!-- Nupud juhuslike sõnade genereerimiseks -->
+        <input type="button" value="juhuslik sõna" onclick="randomSyna()">
     </tr>
     <tr>
         <!-- Kuvatavad juhuslikud sõnad -->
+        <div id="random-sona"></div>
+        <lable for="kontroll">Krijuta sõna vene keeles</lable>
     </tr>
     <tr>
         <!-- Sisendväljad venekeelsete sõnade kontrolliks -->
     </tr>
     <tr>
         <!-- Sisendväljad vastuste kontrolliks -->
+        <input type="text" id="kontroll" onchange="sonakontroll()">
+        <div id ="vastus"></div>
     </tr>
     <tr>
         <!-- Vastuste kuvamine -->
