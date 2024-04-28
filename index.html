@@ -2,16 +2,48 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
+    <!-- Määrab veebilehe pealkirja -->
     <title>Tarkvara sõnad</title>
-  <script src="script.js"></script>
+    <!-- Lisab väliste skriptide faili, et kasutada JavaScripti funktsioone -->
+    <script src="script.js"></script>
 </head>
 <body>
-<input type="button" value="juhuslik sõna" onclick="randomSyna()">
-<br>
-<div id="random-sona"></div>
-<lable for="kontroll">Krijuta sõna vene keeles</lable>
-<input type="text" id="kontroll" onchange="sonakontroll()">
-<div id ="vastus"></div>
-
+<!-- Teen tabel -->
+<table border="1">
+    <thead>
+    <tr>
+        <!-- Päise veergude nimetused -->
+        <th>Eesti-Vene</th>
+        <th>Vene-Eesti</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <!-- Nupud juhuslike sõnade genereerimiseks -->
+        <td><input type="button" value="juhuslik sõna eesti keeles" onclick="randomSyna()"></td>
+        <td><input type="button" value="juhuslik sõna vene keeles" onclick="randomSyna1()"></td>
+    </tr>
+    <tr>
+        <!-- Kuvatavad juhuslikud sõnad -->
+        <td><div id="random-sona"></div></td>
+        <td><div id="random-sona1"></div></td>
+    </tr>
+    <tr>
+        <!-- Sisendväljad venekeelsete sõnade kontrolliks -->
+        <td><label for="kontroll">Kirjuta sõna vene keeles</label></td>
+        <td><label for="kontroll1">Kirjuta sõna vene keeles</label></td>
+    </tr>
+    <tr>
+        <!-- Sisendväljad vastuste kontrolliks -->
+        <td><input type="text" id="kontroll" onchange="sonakontroll()"></td>
+        <td><input type="text" id="kontroll1" onchange="sonakontroll1()"></td>
+    </tr>
+    <tr>
+        <!-- Vastuste kuvamine -->
+        <td><div id="vastus"></div></td>
+        <td><div id="vastus1"></div></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
