@@ -2,16 +2,21 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
+    <!-- Määrab veebilehe pealkirja -->
     <title>Tarkvara sõnad</title>
-  <script src="script.js"></script>
+    <!-- Lisab väliste skriptide faili, et kasutada JavaScripti funktsioone -->
+    <script src="script.js"></script>
 </head>
 <body>
-<input type="button" value="juhuslik sõna" onclick="randomSyna()">
-<br>
-<div id="random-sona"></div>
-<lable for="kontroll">Krijuta sõna vene keeles</lable>
-<input type="text" id="kontroll" onchange="sonakontroll()">
-<div id ="vastus"></div>
-
+    <!-- Nupp juhusliku sõna genereerimiseks, mis käivitab funktsiooni randomSyna() -->
+    <input type="button" value="juhuslik sõna" onclick="randomSyna()">
+    <br>
+    <!-- Näitab juhuslikult genereeritud sõna -->
+    <div id="random-sona"></div>
+    <!-- Sisestusväli vene keeles sõna kirjutamiseks, mille järel käivitub funktsioon sonakontroll() -->
+    <label for="kontroll">Krijuta sõna vene keeles</label>
+    <input type="text" id="kontroll" onchange="sonakontroll()">
+    <!-- Näitab vastust kontrollitud sõnale -->
+    <div id ="vastus"></div>
 </body>
 </html>
